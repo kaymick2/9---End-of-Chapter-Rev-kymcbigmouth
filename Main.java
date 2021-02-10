@@ -13,8 +13,6 @@ public class Main {
     Quiz max = (Quiz) quizData.getMaximum();
   
     System.out.println("Average Score: " + quizData.getAverage());
-    System.out.println("Expected: 4000");
-    System.out.println("Highest Score: " + quizData.getMaximum());
-    System.out.println("Expected: 10000");
+    System.out.println("Highest Score: " + max.getMeasure());
   }
 }
