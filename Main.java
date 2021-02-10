@@ -7,7 +7,8 @@ public class Main {
     Quiz q1 = new Quiz(89, "B+");
     Quiz q2 = new Quiz(90, "A-");
     Quiz q3 = new Quiz(73, "C+");
-    Quiz max = (Quiz) quizData.getMaximum();
+    Measurable max = quizData.getMaximum();
+    max = (Quiz)max;
     System.out.println("Average Score: " + quizData.getAverage());
     System.out.println("Expected: 4000");
     System.out.println("Highest Score: " + max);
