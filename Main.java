@@ -7,11 +7,14 @@ public class Main {
     Quiz q1 = new Quiz(89, "B+");
     Quiz q2 = new Quiz(90, "A-");
     Quiz q3 = new Quiz(73, "C+");
-    Measurable max = quizData.getMaximum();
-    max = (Quiz)max;
+    quizData.add(q1);
+    quizData.add(q2);
+    quizData.add(q3);
+    Quiz max = (Quiz) quizData.getMaximum();
+  
     System.out.println("Average Score: " + quizData.getAverage());
     System.out.println("Expected: 4000");
-    System.out.println("Highest Score: " + max);
+    System.out.println("Highest Score: " + quizData.getMaximum());
     System.out.println("Expected: 10000");
   }
 }
